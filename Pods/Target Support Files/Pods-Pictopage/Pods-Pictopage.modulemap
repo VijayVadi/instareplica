@@ -1,0 +1,6 @@
+framework module Pods_Pictopage {
+  umbrella header "Pods-Pictopage-umbrella.h"
+
+  export *
+  module * { export * }
+}

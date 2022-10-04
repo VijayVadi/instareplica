@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuBarView" customModule="Pictopage" customModuleProvider="target">
+            <connections>
+                <outlet property="circleView" destination="NoP-Hf-5Nt" id="50b-eL-cKN"/>
+                <outlet property="circleViewHeightConstraint" destination="UyK-1O-SMN" id="4Qu-aZ-FC0"/>
+                <outlet property="circleViewLeftConstraint" destination="gMk-bi-9DI" id="awG-0W-JgO"/>
+                <outlet property="circleViewWidthConstraint" destination="Rnt-fB-4PT" id="5i6-Gx-JDB"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Ewk-Xn-ygb"/>
+                <outlet property="menuBarCollectionView" destination="0QM-am-Y0v" id="MVa-1l-V4T"/>
+                <outlet property="menuBarView" destination="jkA-ba-RTY" id="Imi-Lo-lyM"/>
+                <outlet property="underlineView" destination="6gF-XW-RNO" id="ahe-Q4-RGj"/>
+                <outlet property="underlineViewLeftConstraint" destination="tjf-1j-jZb" id="X9r-d8-YHf"/>
+                <outlet property="underlineViewWidthConstraint" destination="NlG-wF-UR2" id="OTV-yh-DQD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jkA-ba-RTY">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuCircle" translatesAutoresizingMaskIntoConstraints="NO" id="NoP-Hf-5Nt">
+                            <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="Rnt-fB-4PT"/>
+                                <constraint firstAttribute="height" constant="45" id="UyK-1O-SMN"/>
+                            </constraints>
+                        </imageView>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0QM-am-Y0v">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ZQI-Bb-bCM">
+                                <size key="itemSize" width="414" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="5Fk-iW-WRe"/>
+                                <outlet property="delegate" destination="-1" id="dyE-hj-3vr"/>
+                            </connections>
+                        </collectionView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6gF-XW-RNO">
+                            <rect key="frame" x="0.0" y="46" width="140" height="4"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="140" id="NlG-wF-UR2"/>
+                                <constraint firstAttribute="height" constant="4" id="VOZ-Ij-gWG"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="0QM-am-Y0v" firstAttribute="top" secondItem="jkA-ba-RTY" secondAttribute="top" id="AMA-U9-bC8"/>
+                        <constraint firstAttribute="trailing" secondItem="0QM-am-Y0v" secondAttribute="trailing" id="MIK-dh-9Gp"/>
+                        <constraint firstAttribute="bottom" secondItem="0QM-am-Y0v" secondAttribute="bottom" id="O4Y-hM-RoB"/>
+                        <constraint firstAttribute="bottom" secondItem="6gF-XW-RNO" secondAttribute="bottom" id="Z36-dn-TJM"/>
+                        <constraint firstItem="NoP-Hf-5Nt" firstAttribute="leading" secondItem="jkA-ba-RTY" secondAttribute="leading" id="gMk-bi-9DI"/>
+                        <constraint firstAttribute="bottom" secondItem="NoP-Hf-5Nt" secondAttribute="bottom" id="muY-LX-cR9"/>
+                        <constraint firstItem="0QM-am-Y0v" firstAttribute="leading" secondItem="jkA-ba-RTY" secondAttribute="leading" id="piw-Ak-RB1"/>
+                        <constraint firstItem="6gF-XW-RNO" firstAttribute="leading" secondItem="jkA-ba-RTY" secondAttribute="leading" id="tjf-1j-jZb"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="6gF-XW-RNO"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="jkA-ba-RTY" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="EAo-0T-8Xs"/>
+                <constraint firstItem="jkA-ba-RTY" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Q6E-WZ-eMJ"/>
+                <constraint firstItem="jkA-ba-RTY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Rna-EW-2Wi"/>
+                <constraint firstItem="jkA-ba-RTY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Yu6-VX-NQT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="337.16517857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="menuCircle" width="48" height="49"/>
+    </resources>
+</document>

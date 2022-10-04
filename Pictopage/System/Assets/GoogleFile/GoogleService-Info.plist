@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>75316297905-9oh8f6beoo9oe3li6vapuco4jcapmcvq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.75316297905-9oh8f6beoo9oe3li6vapuco4jcapmcvq</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBzpk4CXyUDTdPjC9xUWBASKmjrwOmMrYE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>75316297905</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>pages.pagesdevelopment</string>
+	<key>PROJECT_ID</key>
+	<string>pages-beta</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pages-beta.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:75316297905:ios:5f4fbd197395c27d</string>
+	<key>DATABASE_URL</key>
+	<string>https://pages-beta.firebaseio.com</string>
+</dict>
+</plist>

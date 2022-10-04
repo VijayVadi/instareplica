@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MenuButtonCell" id="gTV-IL-0wX" customClass="MenuButtonCell" customModule="Pictopage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="57" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="57" height="57"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TlR-ZY-xEH">
+                        <rect key="frame" x="0.0" y="0.0" width="57" height="57"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vQb-r7-6AM">
+                                <rect key="frame" x="0.0" y="6" width="45" height="45"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_email" translatesAutoresizingMaskIntoConstraints="NO" id="YhX-3Q-BBy">
+                                        <rect key="frame" x="12.5" y="12.5" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="05W-q5-sfq"/>
+                                            <constraint firstAttribute="height" constant="20" id="f6O-4A-g1Q"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="YhX-3Q-BBy" firstAttribute="centerX" secondItem="vQb-r7-6AM" secondAttribute="centerX" id="034-Jn-4vn"/>
+                                    <constraint firstAttribute="height" constant="45" id="C05-1H-wqr"/>
+                                    <constraint firstAttribute="width" constant="45" id="dlS-dR-i8O"/>
+                                    <constraint firstItem="YhX-3Q-BBy" firstAttribute="centerY" secondItem="vQb-r7-6AM" secondAttribute="centerY" id="xEO-mT-d4u"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vQb-r7-6AM" firstAttribute="centerY" secondItem="TlR-ZY-xEH" secondAttribute="centerY" id="IRI-Pm-A5q"/>
+                            <constraint firstItem="vQb-r7-6AM" firstAttribute="leading" secondItem="TlR-ZY-xEH" secondAttribute="leading" id="hOj-zl-nM5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="TlR-ZY-xEH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VIE-7a-NOb"/>
+                <constraint firstAttribute="bottom" secondItem="TlR-ZY-xEH" secondAttribute="bottom" id="mkZ-kv-TDl"/>
+                <constraint firstItem="TlR-ZY-xEH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xC4-ai-cvA"/>
+                <constraint firstAttribute="trailing" secondItem="TlR-ZY-xEH" secondAttribute="trailing" id="zAn-PC-8nb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="menuBtnImage" destination="YhX-3Q-BBy" id="rXw-ed-Pw4"/>
+            </connections>
+            <point key="canvasLocation" x="-23.188405797101453" y="-13.392857142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="menu_email" width="22" height="17"/>
+    </resources>
+</document>
